@@ -21,7 +21,7 @@ with open("./Resources/budget_data.csv", newline="") as csvfile:
         resultfile.write("Financial Analysis\n----------------------------\n")
         resultfile.write(f"Total Months: {totMonths}\n")
         resultfile.write(f"Total: ${netPL}\n")
-        resultfile.write("Average Change: $%.2f\n" % (float(netPL)/totMonths))
+        resultfile.write("Average Change: ${:.2f}\n".format(float(netPL)/totMonths))
         resultfile.write(f"Greatest Increase in Profits: ${greatestProfit}\n")
         resultfile.write(f"Greatest Decrease in Profits: ${greatestLoss}\n")
     print("\nFinancial Analysis\n----------------------------")
