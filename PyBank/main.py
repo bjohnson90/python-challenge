@@ -32,5 +32,5 @@ with open("./Resources/budget_data.csv", newline="") as csvfile:
     print(f"Total Months: {totMonths}")
     print(f"Total: ${netPL}")
     print("Average Change: ${:.2f}\n".format(float(netPL)/totMonths))
-    print(f"Greatest Increase in Profits: ${greatestProfit}")
-    print(f"Greatest Decrease in Profits: ${greatestLoss}")
+    print(f"Greatest Increase in Profits: {greatestProfitMonth} ${greatestProfit}")
+    print(f"Greatest Decrease in Profits: {greatestLossMonth} ${greatestLoss}")
